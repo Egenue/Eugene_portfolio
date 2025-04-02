@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div><strong>My Portfolio</strong></div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="./Screenshot 2024-11-12 161129.png" alt="Profile Photo" class="profile-img">
+        <h1>Hello, I'm Kipchirchir Eugene</h1>
+        <p>I'm an IT student passionate about <strong>Software Development, AI, and Databases</strong>.</p>
+        <p>Certified in <strong>CCNA</strong> and currently working on <strong>Data Science</strong></p>
+        <p>Currently working on exciting projects, including AI integration and full-stack development.</p>
+        <p>I'm based in Kenya at the moment</p>
+        <a href="#projects" class="cta-btn">Check Out My Projects</a>
+    </section>
+
+    <section id="about" class="bio">
+        <div class="bio-content">
+            <div class="bio-text">
+                <h2>About Me</h2>
+                <p>I am a student at the University of Nairobi, pursuing a degree in IT. I am passionate about
+                    software development, AI, and databases. I am certified in CCNA and currently working on Data
+                    Science. I
+                    am currently working on exciting projects, including AI integration and full-stack development. I am
+                    based in Kenya at the moment.</p>
+            </div>
+
+            <div class="bio-image">
+                <img src="./Mandem.png" alt="Profile Photo">
+            </div>
+            <div class="bio-footer">
+                <p>In my free time, I enjoy exploring new technologies, contributing to open-source projects, and
+                    learning
+                    about the latest trends in software development and AI.</p>
+                <p>Feel free to reach out if you have any questions or if you'd like to collaborate on a project!</p>
+                <p>Thank you for visiting my portfolio!</p>
+                <p>Best regards, Kipchirchir Eugene</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills-section">
+        <h3>Skills</h3>
+        <ul>
+            <li>Programming Languages: Python, Java, C++</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>Database Management: SQL, MongoDB</li>
+            <li>AI and Machine Learning: TensorFlow, Keras</li>
+            <li>Networking: CCNA Certified</li>
+            <li>Cloud Computing: AWS, Azure</li>
+            <li>Version Control: Git, GitHub</li>
+            <li>Frameworks: Django, Flask, React</li>
+            <li>Tools: Visual Studio Code, Jupyter Notebook</li>
+            <li>Soft Skills: Teamwork, Communication, Problem Solving</li>
+        </ul>
+
+        <h3>Hobbies</h3>
+        <ul>
+            <li>Reading tech blogs and articles</li>
+            <li>Participating in hackathons and coding competitions</li>
+            <li>Contributing to open-source projects</li>
+            <li>Exploring new technologies and frameworks</li>
+            <li>Playing video games and watching tech-related documentaries</li>
+        </ul>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <h3>AI Facial Recognition</h3>
+                <p>Built an AI model for facial recognition in institutions.</p>
+                <a href="#" class="cta-btn" data-project="ai">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Dart Web App</h3>
+                <p>Deployed a Flutter web app using Vercel.</p>
+                <a href="#" class="cta-btn" data-project="web">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Database Transactions</h3>
+                <p>Explored transaction management techniques in SQL.</p>
+                <a href="#" class="cta-btn" data-project="db">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section id="project-details" class="project-details">
+        <div class="project-content">
+            <h2>Project Details</h2>
+            <div id="project-description"></div>
+            <button id="close-btn" class="cta-btn">Close</button>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7xj1z5l5e5e5e5e5e5e5e5e5e5e5e5e5"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7xj1z5l5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7xj1z5l5e5e5e5e5e5e5e5e5e5e5e5" crossorigin="anonymous">
+        </script>
+    <script src="Exampe.js"></script>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <div class="error-message"></div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error-message"></div>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <div class="error-message"></div>
+
+            <button type="submit">Send</button>
+        </form>
+        <!-- <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn
+                Profile</a></p>
+        <p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub
+                Profile</a></p> -->
+    </section>
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
